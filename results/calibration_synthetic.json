@@ -1,0 +1,314 @@
+{
+  "checked_at_utc": "2026-10-23T14:01:11.143629+00:00",
+  "seed": 679,
+  "kind": "synthetic implementation diagnostic; not model results or a proof",
+  "warning": "A small quick run cannot estimate a rare 1% event precisely. Shift has no asserted guarantee.",
+  "cells": [
+    {
+      "n_incorrect_calibration": 0,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 1,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": 0.0
+    },
+    {
+      "n_incorrect_calibration": 0,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 1,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 0,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 1,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 10,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 11,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": 0.0
+    },
+    {
+      "n_incorrect_calibration": 10,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 11,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 10,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 11,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 89,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": 0.0
+    },
+    {
+      "n_incorrect_calibration": 89,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 89,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.0,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 90,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.009888364709658948,
+      "empirical_violation_fraction": 0.0104,
+      "violation_fraction_wilson_95": [
+        0.008591159114003776,
+        0.012584852090562745
+      ],
+      "mean_population_false_acceptance": 0.010851244377391215,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": 0.6308
+    },
+    {
+      "n_incorrect_calibration": 90,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.009888364709658948,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 90,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 90,
+      "theoretical_violation_upper_bound": 0.009888364709658948,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 200,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 197,
+      "theoretical_violation_upper_bound": 0.00904837639610091,
+      "empirical_violation_fraction": 0.0099,
+      "violation_fraction_wilson_95": [
+        0.00813900122178111,
+        0.01203739398115609
+      ],
+      "mean_population_false_acceptance": 0.019897903859931614,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": 0.9815
+    },
+    {
+      "n_incorrect_calibration": 200,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 197,
+      "theoretical_violation_upper_bound": 0.00904837639610091,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 200,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 197,
+      "theoretical_violation_upper_bound": 0.00904837639610091,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 500,
+      "distribution": "continuous_uniform",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 487,
+      "theoretical_violation_upper_bound": 0.005507754691732029,
+      "empirical_violation_fraction": 0.0056,
+      "violation_fraction_wilson_95": [
+        0.004315267073552004,
+        0.007264430515373014
+      ],
+      "mean_population_false_acceptance": 0.028038034723275866,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": 1.0
+    },
+    {
+      "n_incorrect_calibration": 500,
+      "distribution": "discrete_five_levels",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 487,
+      "theoretical_violation_upper_bound": 0.005507754691732029,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 0.0,
+      "shift_to_beta10_violation_fraction": null
+    },
+    {
+      "n_incorrect_calibration": 500,
+      "distribution": "high_confidence_atom",
+      "trials": 10000,
+      "alpha": 0.05,
+      "delta": 0.01,
+      "order_statistic": 487,
+      "theoretical_violation_upper_bound": 0.005507754691732029,
+      "empirical_violation_fraction": 0.0,
+      "violation_fraction_wilson_95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "mean_population_false_acceptance": 0.0,
+      "reject_all_policy_or_top_atom_threshold_fraction": 1.0,
+      "shift_to_beta10_violation_fraction": null
+    }
+  ]
+}

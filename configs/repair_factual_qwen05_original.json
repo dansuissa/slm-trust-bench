@@ -1,0 +1,31 @@
+{
+  "model": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "dtype": "float32",
+  "cpu_threads": 1,
+  "max_process_rss_gib": 3.5,
+  "minimum_available_memory_gib": 0.65,
+  "max_context_tokens": 1024,
+  "prompt_rendering": "native_chat",
+  "raw_add_special_tokens": false,
+  "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+  "data": "data/cpu_measurement_repair_20261023/factual_pilot_original.jsonl",
+  "task": "factual",
+  "seed": 679,
+  "repetitions": 1,
+  "score_samples": 1,
+  "candidate": {
+    "max_new_tokens": 24,
+    "do_sample": false
+  },
+  "score_decoding": {
+    "max_new_tokens": 24,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0
+  },
+  "purpose": "Paired question-repair engineering pilot, original; six development items; one auxiliary sample retained for CPU runner compatibility, no confidence/calibration claim"
+}

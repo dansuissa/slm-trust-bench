@@ -1,0 +1,26 @@
+{
+  "model": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "dtype": "float32",
+  "cpu_threads": 1,
+  "max_process_rss_gib": 3.5,
+  "minimum_available_memory_gib": 0.65,
+  "max_context_tokens": 2048,
+  "prompt_rendering": "native_chat",
+  "raw_add_special_tokens": false,
+  "data": "data/cpu_measurement_repair_20261023/pvq_choice_only_validation.jsonl",
+  "task": "value",
+  "seed": 681,
+  "repetitions": 2,
+  "score_samples": 0,
+  "candidate": {
+    "max_new_tokens": 8,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0
+  },
+  "purpose": "Paired format-remediation validation: choice_only; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+}

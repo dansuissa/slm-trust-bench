@@ -1,0 +1,183 @@
+{
+  "analyzed_at_utc": "2026-10-23T15:24:03.858400+00:00",
+  "kind": "paired development validation; no final model ranking or human gold labels",
+  "factual": {
+    "repair_factual_smol360_original": {
+      "items": 6,
+      "candidate_nonempty": 6,
+      "exact_reference_matches": 0,
+      "substring_reference_matches": 0,
+      "candidate_quality": {
+        "complete": 5,
+        "length_capped": 1
+      },
+      "interpretation": "Reference-string matches, not independently adjudicated factual correctness. The one auxiliary sample is not a confidence estimate."
+    },
+    "repair_factual_smol360_repaired": {
+      "items": 6,
+      "candidate_nonempty": 6,
+      "exact_reference_matches": 0,
+      "substring_reference_matches": 0,
+      "candidate_quality": {
+        "complete": 6
+      },
+      "interpretation": "Reference-string matches, not independently adjudicated factual correctness. The one auxiliary sample is not a confidence estimate."
+    },
+    "repair_factual_qwen05_original": {
+      "items": 6,
+      "candidate_nonempty": 6,
+      "exact_reference_matches": 0,
+      "substring_reference_matches": 0,
+      "candidate_quality": {
+        "complete": 5,
+        "length_capped": 1
+      },
+      "interpretation": "Reference-string matches, not independently adjudicated factual correctness. The one auxiliary sample is not a confidence estimate."
+    },
+    "repair_factual_qwen05_repaired": {
+      "items": 6,
+      "candidate_nonempty": 6,
+      "exact_reference_matches": 0,
+      "substring_reference_matches": 0,
+      "candidate_quality": {
+        "complete": 6
+      },
+      "interpretation": "Reference-string matches, not independently adjudicated factual correctness. The one auxiliary sample is not a confidence estimate."
+    }
+  },
+  "value": {
+    "repair_value_smol360_released": {
+      "draws": 16,
+      "contract_parse_successes": 11,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 7,
+      "verbatim_example_reason_phrase": 13,
+      "length_capped": 1,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 4,
+        "incomplete_or_invalid_item_variants": 4,
+        "draws": 16,
+        "valid_choice_rate": 0.6875,
+        "any_flip_rate_complete_only": 0.0,
+        "expected_repetitions": 2
+      },
+      "format_errors": {
+        "released_choice_parser_invalid": 5
+      },
+      "source_response_sha256": "b7900218292a27ea059ba1c192e0d73a16b93d671899b4431406cda7ba2575e1",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    },
+    "repair_value_qwen05_released": {
+      "draws": 16,
+      "contract_parse_successes": 13,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 5,
+      "verbatim_example_reason_phrase": 0,
+      "length_capped": 1,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 5,
+        "incomplete_or_invalid_item_variants": 3,
+        "draws": 16,
+        "valid_choice_rate": 0.8125,
+        "any_flip_rate_complete_only": 0.8,
+        "expected_repetitions": 2
+      },
+      "format_errors": {
+        "released_choice_parser_invalid": 3
+      },
+      "source_response_sha256": "302d01eeee539079a0d49c03cce09105a86aaf5e16d8f9f7329c4753b924789a",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    },
+    "repair_value_smol360_neutral_structured": {
+      "draws": 16,
+      "contract_parse_successes": 2,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 0,
+      "verbatim_example_reason_phrase": 0,
+      "length_capped": 1,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 0,
+        "incomplete_or_invalid_item_variants": 8,
+        "draws": 16,
+        "valid_choice_rate": 0.125,
+        "any_flip_rate_complete_only": null,
+        "expected_repetitions": 2
+      },
+      "format_errors": {
+        "invalid_structured_contract": 14
+      },
+      "source_response_sha256": "c15028a3dc9e7b037b7cbaf852e573a16cc2e94a5c8ff6776b0e167929b06752",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    },
+    "repair_value_qwen05_neutral_structured": {
+      "draws": 16,
+      "contract_parse_successes": 9,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 5,
+      "verbatim_example_reason_phrase": 0,
+      "length_capped": 1,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 1,
+        "incomplete_or_invalid_item_variants": 7,
+        "draws": 16,
+        "valid_choice_rate": 0.5625,
+        "any_flip_rate_complete_only": 0.0,
+        "expected_repetitions": 2
+      },
+      "format_errors": {
+        "invalid_structured_contract": 7
+      },
+      "source_response_sha256": "ad4f2cc3d0e92fcd2828b4eadedd06b4c6e9f33dc1d949f212220450cc70b3f3",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    },
+    "repair_value_smol360_choice_only": {
+      "draws": 16,
+      "contract_parse_successes": 8,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 4,
+      "verbatim_example_reason_phrase": 0,
+      "length_capped": 1,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 2,
+        "incomplete_or_invalid_item_variants": 6,
+        "draws": 16,
+        "valid_choice_rate": 0.5,
+        "any_flip_rate_complete_only": 0.0,
+        "expected_repetitions": 2
+      },
+      "format_errors": {
+        "not_one_bare_legal_option": 8
+      },
+      "source_response_sha256": "5dd170977348e622b6142addbe50563518ade3fde0400038ff4b67b6bf0a70b8",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    },
+    "repair_value_qwen05_choice_only": {
+      "draws": 16,
+      "contract_parse_successes": 16,
+      "fresh_development_draws": 8,
+      "fresh_development_parse_successes": 8,
+      "verbatim_example_reason_phrase": 0,
+      "length_capped": 0,
+      "choice_repetition_diagnostic": {
+        "item_variants": 8,
+        "complete_valid_item_variants": 8,
+        "incomplete_or_invalid_item_variants": 0,
+        "draws": 16,
+        "valid_choice_rate": 1.0,
+        "any_flip_rate_complete_only": 0.625,
+        "expected_repetitions": 2
+      },
+      "format_errors": {},
+      "source_response_sha256": "550d825e8b41733bedb65758ac2ceb59663db6cfc00adebd71c85961edd469b1",
+      "interpretation": "Different contracts have different obligations. Format success and absence of the copied phrase do not establish relevant reasoning, genuine preferences, or calibrated confidence."
+    }
+  },
+  "human_semantic_reviews_completed": 0,
+  "larger_factual_sweep_cleared": false,
+  "parser_code_sha256": "48a0503fc60c4e0dd349668cc689ebf6f9a7c86809a830755454592cf0a8b7ca"
+}

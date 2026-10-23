@@ -1,0 +1,26 @@
+{
+  "model": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "dtype": "float32",
+  "cpu_threads": 1,
+  "max_process_rss_gib": 3.5,
+  "minimum_available_memory_gib": 0.65,
+  "max_context_tokens": 2048,
+  "prompt_rendering": "native_chat",
+  "raw_add_special_tokens": false,
+  "data": "data/cpu_execution_20261023/pvq_no_numbers.jsonl",
+  "task": "value",
+  "seed": 680,
+  "repetitions": 2,
+  "score_samples": 0,
+  "candidate": {
+    "max_new_tokens": 96,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0
+  },
+  "purpose": "Exploratory post-pilot PVQ prompt control: no_numbers; first four questions, two draws; not a paper reproduction or confirmatory test"
+}

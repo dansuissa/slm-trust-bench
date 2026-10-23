@@ -1,0 +1,37 @@
+{
+  "version": "measurement-repair-v1",
+  "raw_source_sha256": "51681d2a5338770077470f69ad7b7688475bd085ca9c8f818cb9a91d933a8e07",
+  "upstream_repository_revision": "cb5554678457beb5ac163d888f1ce8cf174b3f0b",
+  "upstream_alignment_counts": {
+    "historical_tuple_aligned": 425,
+    "subject_unresolved": 168,
+    "reference_not_in_filtered_upstream": 7
+  },
+  "question_repairs_by_rule": {
+    "time_to_place_of_death": 56,
+    "explicit_genre_relation": 51,
+    "explicit_record_label_relation": 23,
+    "restore_capital_of_direction": 2
+  },
+  "question_repairs_total": 132,
+  "question_intervention_types": {
+    "semantic_type_or_direction_repair": 58,
+    "unchanged": 468,
+    "relation_disambiguation": 74
+  },
+  "development_items": 100,
+  "calibration_candidates": 500,
+  "calibration_after_group_quarantine": 497,
+  "calibration_quarantined": 3,
+  "new_grouping": "relation + case-folded whitespace-normalized subject label; still not entity-ID resolution",
+  "reference_values_changed": false,
+  "original_inputs_modified": false,
+  "test_views_opened_by_builder": false,
+  "reference_adjudication_complete": false,
+  "known_remaining_limits": [
+    "Historical single-reference coverage and factual truth require adjudication.",
+    "P138 person/place wording and P140 anthropomorphic wording remain review risks outside this minimal repair.",
+    "Removing an answer-bearing example is a prompt intervention, not demonstrated reasoning improvement.",
+    "Choice-only is a separate elicitation task; it cannot replace the paper reasoning condition."
+  ]
+}

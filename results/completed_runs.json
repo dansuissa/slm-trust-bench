@@ -1,0 +1,2194 @@
+{
+  "audited_at_utc": "2026-10-23T15:56:01.649267+00:00",
+  "runs": [
+    {
+      "run": "c3_qwen05_native_chat",
+      "task": "factual",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 12,
+      "responses": 12,
+      "generation_calls": 48,
+      "candidate_quality": {
+        "complete": 12
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 12,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 12
+      },
+      "generation_timer_seconds": 87.41757893562317,
+      "peak_process_rss_bytes": 3393490944,
+      "parameter_count": 494032768,
+      "config_sha256": "04474886120e8b1f8792e99b30fdccdce835a0e98121f3eecfb44c0948dc83df",
+      "data_sha256": "b3d8816a07ddea85bc10536924e1e0a61d1304c42d6857538ec514b7eceae78b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "1a93e63a470bcefeeb192ccda315b37b023e53bc16e7efcd1284de26ac9647f3",
+      "responses_sha256": "9949cb408322b05b106c3f61be5efe2d48f260377cd2ec8d1e15b0474cfbc96b",
+      "run_metadata_sha256": "d97228f2c013ba649a969ba12730951b0173a60c106d2b2a96245f1df0a05ead",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_execution_20261023/factual_prompt_pilot.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 3,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "C3 paired content-matched rendering and resource pilot; exploratory extension, not paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:09:29.991006+00:00",
+      "finished_at_utc": "2026-10-23T14:11:30.711770+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c3_qwen05_raw_content",
+      "task": "factual",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 12,
+      "responses": 12,
+      "generation_calls": 48,
+      "candidate_quality": {
+        "length_capped": 12
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 12,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 12
+      },
+      "generation_timer_seconds": 134.9937866590917,
+      "peak_process_rss_bytes": 3135614976,
+      "parameter_count": 494032768,
+      "config_sha256": "99a878da71b391261749e54bc76f41a7c8633b1c80d1c5fae08d9174d19c6933",
+      "data_sha256": "b3d8816a07ddea85bc10536924e1e0a61d1304c42d6857538ec514b7eceae78b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "21581afa5dbb9586cad10bb2f978bb96d75c17ab8f2a48cbf410c33fbdd5dfca",
+      "responses_sha256": "d70bfcc995fdab364eb693e880c862cdce7d2783400b378c8bbb18f751a3c471",
+      "run_metadata_sha256": "a7bc583e2708475db40fa286cf935f41e4d23d776084dc6a5ed62f1ec0a2527e",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "raw_content",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_execution_20261023/factual_prompt_pilot.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 3,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "C3 paired content-matched rendering and resource pilot; exploratory extension, not paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:11:31.277683+00:00",
+      "finished_at_utc": "2026-10-23T14:13:58.248145+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c3_smol360_native_chat",
+      "task": "factual",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 12,
+      "responses": 12,
+      "generation_calls": 48,
+      "candidate_quality": {
+        "complete": 11,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 12,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 12
+      },
+      "generation_timer_seconds": 64.15363672282547,
+      "peak_process_rss_bytes": 2517909504,
+      "parameter_count": 361821120,
+      "config_sha256": "4fb3e573c0c4da6adc225754a9f8b0b6d7e685e855d99cc70a629e9302d61933",
+      "data_sha256": "b3d8816a07ddea85bc10536924e1e0a61d1304c42d6857538ec514b7eceae78b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "fc0565d7e47b006d8aba86e8e8c0669531a916d08404c2834e91d7b4e1748ed3",
+      "responses_sha256": "3906e3ff66a4ccecac2cc58bf50ce73f36898f99806528210cca29c03e555c9e",
+      "run_metadata_sha256": "d307c451ce7c6df6d99605ae1657320e4557391e5056c9aa056e5e2fd7ab0bde",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_execution_20261023/factual_prompt_pilot.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 3,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "C3 paired content-matched rendering and resource pilot; exploratory extension, not paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:06:01.062312+00:00",
+      "finished_at_utc": "2026-10-23T14:07:35.323632+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c3_smol360_raw_content",
+      "task": "factual",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 12,
+      "responses": 12,
+      "generation_calls": 48,
+      "candidate_quality": {
+        "complete": 4,
+        "length_capped": 8
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 9,
+      "largest_identical_text_count": 4,
+      "answerability_counts": {
+        "None": 12
+      },
+      "generation_timer_seconds": 72.96248210594058,
+      "peak_process_rss_bytes": 2280763392,
+      "parameter_count": 361821120,
+      "config_sha256": "c55e68244c4be2fc477c679b3496a08feb91562b6bb4ec2e8554ab7e05de47c9",
+      "data_sha256": "b3d8816a07ddea85bc10536924e1e0a61d1304c42d6857538ec514b7eceae78b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "de2ee6030b3fa9f56bf0eb7fd3881a23c1a7f4675a306179e630d3560165beb9",
+      "responses_sha256": "043327e9584eb59f01e25821f0e544ebc8ebe9a18d893994a3a4223c90df9de7",
+      "run_metadata_sha256": "4033aea3978ad89dcd2c60cf8e73e6e5ff63128e1b2a9e63421f5bdbf313d73b",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "raw_content",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_execution_20261023/factual_prompt_pilot.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 3,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "C3 paired content-matched rendering and resource pilot; exploratory extension, not paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:08:03.679491+00:00",
+      "finished_at_utc": "2026-10-23T14:09:29.506207+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_qwen05_format_pilot",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 7,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 58.11721497680992,
+      "peak_process_rss_bytes": 3210989568,
+      "parameter_count": 494032768,
+      "config_sha256": "89b4e4a0eee94837fe169e1319dd5ba27553729ddf411e2744d75ef463b30724",
+      "data_sha256": "47ae60da43c69baab6049447f921dbab3dba8d8e0e9db99505f0881faba92436",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "bf91221bde350268ed6df547f6f40896d652baed73cce1abfc500ff350182e65",
+      "responses_sha256": "8c3aff1638824934a45864bf077d278501a5bc856365e133d7e40c64286be5a7",
+      "run_metadata_sha256": "02ca97a7cc6afacba7c181aa186051d3dd81fe7f07063a66bc5c7e8996c58a96",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_format_pilot.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "PVQ choice-format and repetition extension on sub-billion models; explicit stochastic decoding, native generation prompt and 96-token cap differ from paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:14:51.369407+00:00",
+      "finished_at_utc": "2026-10-23T14:15:53.040728+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_qwen05_no_example",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 7,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 69.05696162115782,
+      "peak_process_rss_bytes": 3257036800,
+      "parameter_count": 494032768,
+      "config_sha256": "da1b9237750a3f287809a7f0609367df909f18eefb653e540c6b7e70258f9f0e",
+      "data_sha256": "c5b3228e65a4a315bbd3236cde3105886b8a516df6aaad5330cb61b9e8c55542",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "0dacc2422a04d8d80f815c8614f95330efb306c0376d7cbcf619495a6320117d",
+      "responses_sha256": "4a60695a3a9accf6b81df091b20b52f91455e62a53f33cbe559e3c0c5b6bd580",
+      "run_metadata_sha256": "70d22e2cbbc92cb60b467ca22e34cdbc9bf9e2e7e3e32c6a2b3c23ded9fa8de4",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_example.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_example; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:24:22.508263+00:00",
+      "finished_at_utc": "2026-10-23T14:25:35.022770+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_qwen05_no_example_no_numbers",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 7,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 68.4446563506499,
+      "peak_process_rss_bytes": 3281895424,
+      "parameter_count": 494032768,
+      "config_sha256": "28c7f717d104b2f29f023fdbe1e7a4861ea18ef013bf2020c99fec29d881d67e",
+      "data_sha256": "6be03e0e351b57b059b7560febac02006c9e294ec2393a575733d94cc89bc7ec",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "d5ea3cf5b60c61c8db3ea7cd5026d223679b82f0d495bb87fb806511a35e4cda",
+      "responses_sha256": "bfe6a21746e68b61d827fd601b9a43ff273c167af5e305469196e97320daf2af",
+      "run_metadata_sha256": "deb9d893818520fb5dbb0cfe2082696d28abc4fcd017725af4effe5c865fd04b",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_example_no_numbers.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_example_no_numbers; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:26:46.303987+00:00",
+      "finished_at_utc": "2026-10-23T14:28:00.642290+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_qwen05_no_numbers",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 6,
+        "length_capped": 2
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 64.56717023346573,
+      "peak_process_rss_bytes": 3242147840,
+      "parameter_count": 494032768,
+      "config_sha256": "7ca219223c300d7a3bd9ef66788d90a0e0a7876171c62dbb4cdfadd6779e67a1",
+      "data_sha256": "c06ee19ee1afdcae8fbfda94fd95bf07225b0a64d1c3df09dcc83cea6655ede6",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "f7b64b1fd92d307805de1b4c080aa621537a8985d9487b6570ac7a9654d6c7bc",
+      "responses_sha256": "84b9ca71c37e8a96f504c989247735e82a06b5accadc8e7fb2a854a7d10c30f2",
+      "run_metadata_sha256": "cc96ad5e1c75ab8c41e745ebb2790c889e7c3323e06f37e2e0cfa2d76d1a2f7d",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_numbers.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_numbers; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:25:35.500154+00:00",
+      "finished_at_utc": "2026-10-23T14:26:45.860297+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_smol360_format_pilot",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 7,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 3,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 43.49357017688453,
+      "peak_process_rss_bytes": 2335883264,
+      "parameter_count": 361821120,
+      "config_sha256": "6b78c7f7d11e9d814c089fa4d0bf9cc516bce1a514f0d7a9893f712641ac5705",
+      "data_sha256": "47ae60da43c69baab6049447f921dbab3dba8d8e0e9db99505f0881faba92436",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "643e06872a6fa0b131449fa8e4de699d4172ccbfdb51f4dbb9923c8df8fcb2f0",
+      "responses_sha256": "29db9137f5608c38de3d0b75c613b0d0f288960ca69eab8016e075ab639a1842",
+      "run_metadata_sha256": "f72252d2be02e4abcf62f90278b110d1e5c31eaf9d84dcef1ebcf5fa7255abf0",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_format_pilot.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "PVQ choice-format and repetition extension on sub-billion models; explicit stochastic decoding, native generation prompt and 96-token cap differ from paper reproduction"
+      },
+      "started_at_utc": "2026-10-23T14:13:58.755651+00:00",
+      "finished_at_utc": "2026-10-23T14:14:50.906409+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_smol360_no_example",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "length_capped": 3,
+        "complete": 5
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 47.880665205419064,
+      "peak_process_rss_bytes": 2273959936,
+      "parameter_count": 361821120,
+      "config_sha256": "c6e731385e5ef4baede0ea53b97ab40c01e96f791b6fefeef9b6ae26b4770a19",
+      "data_sha256": "c5b3228e65a4a315bbd3236cde3105886b8a516df6aaad5330cb61b9e8c55542",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "9566ddba5fc1b7dd7ba4a4553d43e8abfd7e04caa304f3c8db196679f559a539",
+      "responses_sha256": "5978016fc481f42f78666e74b70a30eb55c3224164d70623bcef7f39085f1534",
+      "run_metadata_sha256": "9dac6b1b6fb26e784aa84fd5f757bbba49dae57ae0375902d7149e7168dd696d",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_example.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_example; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:21:33.702382+00:00",
+      "finished_at_utc": "2026-10-23T14:22:26.966963+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_smol360_no_example_no_numbers",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 7,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 51.514414669945836,
+      "peak_process_rss_bytes": 2356244480,
+      "parameter_count": 361821120,
+      "config_sha256": "a23c76ec75015b15b05fab9b426b92b4be9de7d07c5100d50222413a17e12e48",
+      "data_sha256": "6be03e0e351b57b059b7560febac02006c9e294ec2393a575733d94cc89bc7ec",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "cd83d11ab9655d87b6ea8ddb996eccd1ffff79810dc78827b8575ae42c05b1e5",
+      "responses_sha256": "0ea35387ae44d1a0162ebbf0ca8ab5df1b1f2da7f1b4e4733587debb10959835",
+      "run_metadata_sha256": "1e0a2ea82bd9c90cac88377032834430611fa83a1611283c236023a6fd10435c",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_example_no_numbers.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_example_no_numbers; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:23:25.425310+00:00",
+      "finished_at_utc": "2026-10-23T14:24:22.065853+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c4_smol360_no_numbers",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 4,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 4,
+        "length_capped": 4
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 3,
+      "answerability_counts": {
+        "None": 4
+      },
+      "generation_timer_seconds": 54.41004756093025,
+      "peak_process_rss_bytes": 2385571840,
+      "parameter_count": 361821120,
+      "config_sha256": "e2da97c4bc84eae1e33ce662e7423b3549695bcfc20f1d6b38e8b0b131921938",
+      "data_sha256": "c06ee19ee1afdcae8fbfda94fd95bf07225b0a64d1c3df09dcc83cea6655ede6",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "214075fcaf196273e907b8992299b329c90b7eb53183b94aeae90fd15164dd10",
+      "responses_sha256": "aad9763d96b7ed1b4ef7408ebfb4c1cebab0941ec4fc49c7f8e461973b405ca5",
+      "run_metadata_sha256": "0a5fe231d5ac99b2124402cf8f0683568aaa5c604a5be5d075ccde561f562e26",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/pvq_no_numbers.jsonl",
+        "task": "value",
+        "seed": 680,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Exploratory post-pilot PVQ prompt control: no_numbers; first four questions, two draws; not a paper reproduction or confirmatory test"
+      },
+      "started_at_utc": "2026-10-23T14:22:27.380423+00:00",
+      "finished_at_utc": "2026-10-23T14:23:24.998228+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c6_qwen05_development",
+      "task": "abstention",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 400,
+      "responses": 400,
+      "generation_calls": 400,
+      "candidate_quality": {
+        "complete": 336,
+        "length_capped": 64
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 397,
+      "largest_identical_text_count": 2,
+      "answerability_counts": {
+        "False": 200,
+        "True": 200
+      },
+      "generation_timer_seconds": 1695.6867547566071,
+      "peak_process_rss_bytes": 3135000576,
+      "parameter_count": 494032768,
+      "config_sha256": "2c419e9caed5f7d5c691822b40448d088339566487541701ace663acb701633f",
+      "data_sha256": "fd359d8c791238b90bbf8ccefa9840355a734da504be5ac2d7454e0b674b91a5",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "e9665b345f1929b447254641a9eecce39d90ce3c341bec6a9b808ce3307802e7",
+      "responses_sha256": "a58efb2502220f3acc0f0daafcc9787943e25912fd59df22102f122b7577e5ee",
+      "run_metadata_sha256": "3a34ca5936bb2a6f3afebfa5378f78e328795baa64d6d9490eaa529d4c9df097",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 4096,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_2026-10-23/squad_development_balanced.jsonl",
+        "task": "abstention",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 64,
+          "do_sample": false
+        },
+        "purpose": "Context answerability development extension; 200 answerable and 200 unanswerable; labels require separate manual grading, no tiny self-judge"
+      },
+      "started_at_utc": "2026-10-23T14:46:52.351573+00:00",
+      "finished_at_utc": "2026-10-23T15:15:23.241694+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c6_qwen05_resource_probe",
+      "task": "abstention",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 8,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 8
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "False": 4,
+        "True": 4
+      },
+      "generation_timer_seconds": 50.63308626972139,
+      "peak_process_rss_bytes": 3170304000,
+      "parameter_count": 494032768,
+      "config_sha256": "bff4b6f4f0d6c2ace76dbfb869b40a50e1f193eb48fa8a9a4d18f07cd513105a",
+      "data_sha256": "7bf8f094dd8d34ec4ee8fa5aa3f55811c4bb2e1564e2659e412c9d5c8318c0b1",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "d30de3297ec7144c7aaccf57af6f9603741b6c076a99dbf6757c2b5b423b91c3",
+      "responses_sha256": "d373388c45c55a12a05c4575c3be64c14da224a333f17ef20b79f24476171880",
+      "run_metadata_sha256": "f024613cad6658a1d5dad402d284d463412a81be8f2d97646910cba2b04addb3",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 4096,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/c6_qwen05_resource_probe.jsonl",
+        "task": "abstention",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 64,
+          "do_sample": false
+        },
+        "purpose": "Eight longest development contexts within each answerability stratum; resource probe only, not representative accuracy evaluation"
+      },
+      "started_at_utc": "2026-10-23T14:20:37.041386+00:00",
+      "finished_at_utc": "2026-10-23T14:21:31.271906+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c6_smol360_development",
+      "task": "abstention",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 400,
+      "responses": 400,
+      "generation_calls": 400,
+      "candidate_quality": {
+        "complete": 382,
+        "length_capped": 18
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 394,
+      "largest_identical_text_count": 2,
+      "answerability_counts": {
+        "False": 200,
+        "True": 200
+      },
+      "generation_timer_seconds": 1119.3443483496085,
+      "peak_process_rss_bytes": 2420408320,
+      "parameter_count": 361821120,
+      "config_sha256": "59237fd8b8895507aca69693b2b9fed4f8d75ad5757f188a07a0bd0de094e63b",
+      "data_sha256": "fd359d8c791238b90bbf8ccefa9840355a734da504be5ac2d7454e0b674b91a5",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "84c9f07d9e5cf2e4c5498e557ec9eb070fa38f5a280094b6f2cca8b269b3cd3a",
+      "responses_sha256": "0d093b73c69c19a9d716e3e5f4342e818d413440aa3d015db5f4ee4c6a24a24e",
+      "run_metadata_sha256": "bda92012b7422e1c30ec2b85df77a7ecada55a8955e7c6c742d00b6ee2f4afeb",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 4096,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_2026-10-23/squad_development_balanced.jsonl",
+        "task": "abstention",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 64,
+          "do_sample": false
+        },
+        "purpose": "Context answerability development extension; 200 answerable and 200 unanswerable; labels require separate manual grading, no tiny self-judge"
+      },
+      "started_at_utc": "2026-10-23T14:28:01.189418+00:00",
+      "finished_at_utc": "2026-10-23T14:46:51.879159+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "c6_smol360_resource_probe",
+      "task": "abstention",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 8,
+      "responses": 8,
+      "generation_calls": 8,
+      "candidate_quality": {
+        "complete": 8
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 7,
+      "largest_identical_text_count": 2,
+      "answerability_counts": {
+        "False": 4,
+        "True": 4
+      },
+      "generation_timer_seconds": 40.164670213125646,
+      "peak_process_rss_bytes": 2320834560,
+      "parameter_count": 361821120,
+      "config_sha256": "6b68f90fb8309920f6673b12237edd81b6aec474770b6a34dcf3052fa5e286fa",
+      "data_sha256": "d5834747596069e7c52c96ee2d0b6cf5077ce878ed97532c3190f6340a7a3380",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "c33d4dd20e4e8491e5b2f131b9f7ff6e1281e4da494b5480a6a4142a791d71d6",
+      "responses_sha256": "79918614c41d6b572a8fde2c6b65c2016800ea57afb71f091dc13b5f1229833d",
+      "run_metadata_sha256": "2eba6e33f48f0e0eb800353e9bbdd235488b2fa9a83982033e7108fadfc81b21",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 4096,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_execution_20261023/c6_smol360_resource_probe.jsonl",
+        "task": "abstention",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 64,
+          "do_sample": false
+        },
+        "purpose": "Eight longest development contexts within each answerability stratum; resource probe only, not representative accuracy evaluation"
+      },
+      "started_at_utc": "2026-10-23T14:19:48.720826+00:00",
+      "finished_at_utc": "2026-10-23T14:20:36.554901+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_factual_qwen05_original",
+      "task": "factual",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 6,
+      "responses": 6,
+      "generation_calls": 12,
+      "candidate_quality": {
+        "complete": 5,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 6
+      },
+      "generation_timer_seconds": 26.127274129539728,
+      "peak_process_rss_bytes": 3067097088,
+      "parameter_count": 494032768,
+      "config_sha256": "a330ecc0993ca43f5836ef8e0e83eb940e7700fdb6a6b4df797b5282668b81eb",
+      "data_sha256": "f04155e4526b70334bf7b10d133b14582a1fd6c67d6eb7f44c0aada4e68f53d5",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "70d96bebfc345217328f1f773139fd31e6286bfafd97d5667a452ac7b1b1ae32",
+      "responses_sha256": "23f898e4f241a50e2d16277e1c3edb19156402628a9b26751857235653ed8b82",
+      "run_metadata_sha256": "13a8dccf8a8878db24bb5cff62a8fc8e66dede30ab3dbe6824cfece6b56f2737",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_measurement_repair_20261023/factual_pilot_original.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 1,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired question-repair engineering pilot, original; six development items; one auxiliary sample retained for CPU runner compatibility, no confidence/calibration claim"
+      },
+      "started_at_utc": "2026-10-23T15:16:18.373447+00:00",
+      "finished_at_utc": "2026-10-23T15:16:48.043756+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_factual_qwen05_repaired",
+      "task": "factual",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 6,
+      "responses": 6,
+      "generation_calls": 12,
+      "candidate_quality": {
+        "complete": 6
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 6
+      },
+      "generation_timer_seconds": 23.91920288093388,
+      "peak_process_rss_bytes": 3163906048,
+      "parameter_count": 494032768,
+      "config_sha256": "bcb47a1cd058acb9eac96fba3ca02f7092ce7ad355b9dc2a16599fc0431f4dde",
+      "data_sha256": "5d2ee887f3c821747488203d5de0bc61d970fa15b8e5fdd3b510adced4ecf15b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "d00a3f0a6ec9441c845bdabf05303437281686cb6c64d3c7c96e128db4949a4a",
+      "responses_sha256": "e1908a3420e77eb8c4b596cd71c91d9a1b1adb4fc2d26edf6ed702363a1d0625",
+      "run_metadata_sha256": "60fed6087e2916632d882bea643ba612c438a17acc11562e21a09055d9da5dc3",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_measurement_repair_20261023/factual_pilot_repaired.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 1,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired question-repair engineering pilot, repaired; six development items; one auxiliary sample retained for CPU runner compatibility, no confidence/calibration claim"
+      },
+      "started_at_utc": "2026-10-23T15:16:48.503586+00:00",
+      "finished_at_utc": "2026-10-23T15:17:18.006881+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_factual_smol360_original",
+      "task": "factual",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 6,
+      "responses": 6,
+      "generation_calls": 12,
+      "candidate_quality": {
+        "complete": 5,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 6
+      },
+      "generation_timer_seconds": 16.682865200564265,
+      "peak_process_rss_bytes": 2382831616,
+      "parameter_count": 361821120,
+      "config_sha256": "796a0b73e50698e22f3d74ee6854479ba34baa604c29a6c5164745b2be545e1d",
+      "data_sha256": "f04155e4526b70334bf7b10d133b14582a1fd6c67d6eb7f44c0aada4e68f53d5",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "157610a47e54d89689c03b9e16432cf728d5287d948cde17682624ef98b57f8d",
+      "responses_sha256": "6d3fafcc79a2427a0a6a7fb147f6656edd953fc3e83a201d43fe77a1c7653cd6",
+      "run_metadata_sha256": "32a1f6da6ef25230802fceaeeddef10381243893a0557a7909dcca2df5e2a5da",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_measurement_repair_20261023/factual_pilot_original.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 1,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired question-repair engineering pilot, original; six development items; one auxiliary sample retained for CPU runner compatibility, no confidence/calibration claim"
+      },
+      "started_at_utc": "2026-10-23T15:15:30.710389+00:00",
+      "finished_at_utc": "2026-10-23T15:15:57.193381+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_factual_smol360_repaired",
+      "task": "factual",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 6,
+      "responses": 6,
+      "generation_calls": 12,
+      "candidate_quality": {
+        "complete": 6
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 6,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 6
+      },
+      "generation_timer_seconds": 17.006118814460933,
+      "peak_process_rss_bytes": 2269351936,
+      "parameter_count": 361821120,
+      "config_sha256": "6917a97466dba0fea0bb0b047283bd722848da4fba91a34b7faf10e6c858c46d",
+      "data_sha256": "5d2ee887f3c821747488203d5de0bc61d970fa15b8e5fdd3b510adced4ecf15b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "dae7264d2d4c28650172e47ef5f08c88ae92bbbce97ab254b2ebe3449fdc2784",
+      "responses_sha256": "25b1a1e837f32a7815596a1cd121acb635ba0cefe049c692e725858385121fd7",
+      "run_metadata_sha256": "67ad6eb67fa8574d4fb212751dfcdda6e5f4820de30bd2e35f40d325d1c45ab1",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 1024,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "question_instruction": "Answer the factual question with the shortest answer only: a name, date, place, or phrase. Do not give an explanation.",
+        "data": "data/cpu_measurement_repair_20261023/factual_pilot_repaired.jsonl",
+        "task": "factual",
+        "seed": 679,
+        "repetitions": 1,
+        "score_samples": 1,
+        "candidate": {
+          "max_new_tokens": 24,
+          "do_sample": false
+        },
+        "score_decoding": {
+          "max_new_tokens": 24,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired question-repair engineering pilot, repaired; six development items; one auxiliary sample retained for CPU runner compatibility, no confidence/calibration claim"
+      },
+      "started_at_utc": "2026-10-23T15:15:57.629539+00:00",
+      "finished_at_utc": "2026-10-23T15:16:17.923230+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_qwen05_choice_only",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "complete": 16
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 3,
+      "largest_identical_text_count": 6,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 12.074276090599597,
+      "peak_process_rss_bytes": 3297193984,
+      "parameter_count": 494032768,
+      "config_sha256": "0ef5c51a97c99177140210c7f120045c9fd651d20ffe41a2d7c3d21d5f84fc86",
+      "data_sha256": "b38c1f9ff14ee1e637fb874892908cb58da6aa16d748c04a2140f29aff65914b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "bcd2be98372976eba41c9dec4010be320359f5d07732a4da21e5dc1756984c78",
+      "responses_sha256": "550d825e8b41733bedb65758ac2ceb59663db6cfc00adebd71c85961edd469b1",
+      "run_metadata_sha256": "ba1e0732a13f0a2a47545c9785b9fd5c6f5bdd92c801215f99d60bb0651bf04e",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_choice_only_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 8,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: choice_only; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:23:47.713724+00:00",
+      "finished_at_utc": "2026-10-23T15:24:03.410541+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_qwen05_neutral_structured",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "complete": 15,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 16,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 105.3074982278049,
+      "peak_process_rss_bytes": 3181043712,
+      "parameter_count": 494032768,
+      "config_sha256": "750cd3b91e7fc56c28fd7a9164afb64f4bfb5cb3e4897d519785ce7086724cba",
+      "data_sha256": "897ac7a14953bf7181bf2b075e8d65dc369289dc51188e56bdc0932468a581b0",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "9637ca23a19d3908d7fc99251dad60bc2eb226aee8dee114f36b761f19df77ac",
+      "responses_sha256": "ad4f2cc3d0e92fcd2828b4eadedd06b4c6e9f33dc1d949f212220450cc70b3f3",
+      "run_metadata_sha256": "7177f6bd21e5e0bc765d77a2749287e2c16363b5e16593e40c953012abf9f736",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_neutral_structured_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: neutral_structured; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:21:31.283676+00:00",
+      "finished_at_utc": "2026-10-23T15:23:22.578721+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_qwen05_released",
+      "task": "value",
+      "model": {
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "complete": 15,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 16,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 104.77466914337128,
+      "peak_process_rss_bytes": 3286446080,
+      "parameter_count": 494032768,
+      "config_sha256": "25e4d8ff273717414430631751835f37e9ce84fa53e1414e38970b1b847fc182",
+      "data_sha256": "5ce266c71d43ad2f2d8421d4c70a1ff6b2d2425f6dca44bc10a31947be57b49f",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "5e034f59bdece10987844d27c03aba1380ddd911937042cda28d22dd8d577001",
+      "responses_sha256": "302d01eeee539079a0d49c03cce09105a86aaf5e16d8f9f7329c4753b924789a",
+      "run_metadata_sha256": "e822723b1d6c93335c5e30451ce0c800c42643ec735593374f9fa9f13bd07219",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_released_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: released; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:18:30.532955+00:00",
+      "finished_at_utc": "2026-10-23T15:20:20.908283+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_smol360_choice_only",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "length_capped": 1,
+        "complete": 15
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 8,
+      "largest_identical_text_count": 6,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 14.637486995197833,
+      "peak_process_rss_bytes": 2322022400,
+      "parameter_count": 361821120,
+      "config_sha256": "d9c1038ad435c65eadcb82c011b58cabd0f32696828c4668ee734971231e264f",
+      "data_sha256": "b38c1f9ff14ee1e637fb874892908cb58da6aa16d748c04a2140f29aff65914b",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "19f27d7be42dd2ea39dcb3c25f920a44359e45a28ac610eea5522d85ac3f6d98",
+      "responses_sha256": "5dd170977348e622b6142addbe50563518ade3fde0400038ff4b67b6bf0a70b8",
+      "run_metadata_sha256": "0b8ad6fec106be29e3587fa898df936ee67e1edf51c6266db3ec58b43ea6b77c",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_choice_only_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 8,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: choice_only; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:23:23.086566+00:00",
+      "finished_at_utc": "2026-10-23T15:23:47.252774+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_smol360_neutral_structured",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "complete": 15,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 16,
+      "largest_identical_text_count": 1,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 60.63414963521063,
+      "peak_process_rss_bytes": 2498215936,
+      "parameter_count": 361821120,
+      "config_sha256": "a61f8a3fcdc7a3b39d16254fc0e90923facff6dc57d3b451e3c3a82d0081bbdf",
+      "data_sha256": "897ac7a14953bf7181bf2b075e8d65dc369289dc51188e56bdc0932468a581b0",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "bd3b9466c9a41ff18c7cc1344bb51c569a7255e1a3ec845b05ca4292480a3ca3",
+      "responses_sha256": "c15028a3dc9e7b037b7cbaf852e573a16cc2e94a5c8ff6776b0e167929b06752",
+      "run_metadata_sha256": "5cbb2019bbb1609c60dc9ce19a02a3959db14e2b5610d000815b54bb8f4047cf",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_neutral_structured_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: neutral_structured; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:20:21.393112+00:00",
+      "finished_at_utc": "2026-10-23T15:21:30.792746+00:00",
+      "semantic_metrics": null
+    },
+    {
+      "run": "repair_value_smol360_released",
+      "task": "value",
+      "model": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "items": 8,
+      "responses": 16,
+      "generation_calls": 16,
+      "candidate_quality": {
+        "complete": 15,
+        "length_capped": 1
+      },
+      "empty_candidates": 0,
+      "distinct_candidate_texts": 10,
+      "largest_identical_text_count": 7,
+      "answerability_counts": {
+        "None": 8
+      },
+      "generation_timer_seconds": 68.37222047429532,
+      "peak_process_rss_bytes": 2491265024,
+      "parameter_count": 361821120,
+      "config_sha256": "6a35934fca2ae4839d9beb501d9d1c9b84a71c2bc2a88ae20169b2d30af4b69a",
+      "data_sha256": "5ce266c71d43ad2f2d8421d4c70a1ff6b2d2425f6dca44bc10a31947be57b49f",
+      "code_sha256": {
+        "__init__.py": "1a1b362efd89d156c941a22a37bfeff90f29f7b2d62ce81f1215392f8205095b",
+        "cli.py": "f39da1f59ed0f7d54ecdf0635332f7e4f17314c1b7af8ab137d0492cb456bc0a",
+        "cpu.py": "2706cdbf9bbf32a37614b0ca0b4c6688e214081460086895637514b8a441ebd5",
+        "data.py": "5e11c928063714e65f67da597d8a284e80e13aabd9d45f1e17e01e8610a4d7fe",
+        "io.py": "2dc1bc7f85e99f00ab7b1b605affed44a019488eef913cc7edfaed6da3f6eabb",
+        "metrics.py": "4df78d4191a900399b77466a441b43fa23b681b8dc17d0a03e6087fde2b8641d",
+        "runner.py": "abcc8e35dd8f5f977c38c7263c67c89a921952d82bba71e155e0cce9455493fe",
+        "stats.py": "e23248dc632eb128c7185bb98e7aa6bd660d20f779d5341877c6aff0007c551e"
+      },
+      "draws_sha256": "a529ee1ed0b2a95142c6d26cac02f9dc4ca318254f08c26c67120b065e57bfb6",
+      "responses_sha256": "b7900218292a27ea059ba1c192e0d73a16b93d671899b4431406cda7ba2575e1",
+      "run_metadata_sha256": "44eabdc90c7f5e0032925763638edf1cc32afd30279a492bca61aa9ae537b923",
+      "environment": {
+        "python": "3.12.15",
+        "platform": "Linux-6.12.0-211.47.1.el10_2.x86_64-x86_64-with-glibc2.39",
+        "packages": {
+          "torch": "2.6.0+cpu",
+          "transformers": "4.51.3",
+          "accelerate": "1.6.0",
+          "tokenizers": "0.21.4",
+          "safetensors": "0.8.0",
+          "numpy": "2.5.4",
+          "psutil": "7.2.2"
+        },
+        "cpu_threads": 1,
+        "dtype": "float32"
+      },
+      "config": {
+        "model": {
+          "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+          "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+        },
+        "dtype": "float32",
+        "cpu_threads": 1,
+        "max_process_rss_gib": 3.5,
+        "minimum_available_memory_gib": 0.65,
+        "max_context_tokens": 2048,
+        "prompt_rendering": "native_chat",
+        "raw_add_special_tokens": false,
+        "data": "data/cpu_measurement_repair_20261023/pvq_released_validation.jsonl",
+        "task": "value",
+        "seed": 681,
+        "repetitions": 2,
+        "score_samples": 0,
+        "candidate": {
+          "max_new_tokens": 96,
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": 0
+        },
+        "purpose": "Paired format-remediation validation: released; 8 development items x 2 draws; derived format scoring required; original parser choice field is retained unchanged"
+      },
+      "started_at_utc": "2026-10-23T15:17:18.448059+00:00",
+      "finished_at_utc": "2026-10-23T15:18:30.086808+00:00",
+      "semantic_metrics": null
+    }
+  ],
+  "completed_conditions": 26,
+  "generation_calls": 1216,
+  "candidate_responses": 1048,
+  "source_code_hashes_verified": true,
+  "semantic_grading_performed_by_audit": false,
+  "interpretation": "Development measurements. Calls and repeated outputs are not independent observations. Semantic correctness and abstention have not been adjudicated."
+}

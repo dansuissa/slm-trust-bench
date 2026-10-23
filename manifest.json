@@ -1,0 +1,70 @@
+{
+  "checked_at_utc": "2026-10-08T11:43:33.592379+00:00",
+  "datasets": [
+    {
+      "id": "facttest_training_data",
+      "url": "https://raw.githubusercontent.com/fannie1208/FactTest/2f7bb87530d8321423304330964b70e50b621307/dataset/pararel/training_data.json",
+      "revision": "2f7bb87530d8321423304330964b70e50b621307",
+      "sha256": "51681d2a5338770077470f69ad7b7688475bd085ca9c8f818cb9a91d933a8e07",
+      "bytes": 420718,
+      "items": 5575
+    },
+    {
+      "id": "facttest_ID_test_pararel",
+      "url": "https://raw.githubusercontent.com/fannie1208/FactTest/2f7bb87530d8321423304330964b70e50b621307/dataset/pararel/ID_test_pararel.json",
+      "revision": "2f7bb87530d8321423304330964b70e50b621307",
+      "sha256": "e32ab927e2872b58e107b4680fa3b2ec9f7e7a8943f746282ea13bada95e02d4",
+      "bytes": 422166,
+      "items": 5584
+    },
+    {
+      "id": "facttest_OOD_test_pararel",
+      "url": "https://raw.githubusercontent.com/fannie1208/FactTest/2f7bb87530d8321423304330964b70e50b621307/dataset/pararel/OOD_test_pararel.json",
+      "revision": "2f7bb87530d8321423304330964b70e50b621307",
+      "sha256": "fd086baec31377157eb16c8fb95313f2f0588f5e0bd0faf6221495cd9477c002",
+      "bytes": 993224,
+      "items": 11180
+    },
+    {
+      "id": "value_reasoning",
+      "url": "https://raw.githubusercontent.com/Giovanna-SH/Value_Reasoning_Reliability/0bbf0c5db2b7c8669a8a9d43cfd739a75d17bd84/data/data.zip",
+      "revision": "0bbf0c5db2b7c8669a8a9d43cfd739a75d17bd84",
+      "sha256": "45cf84f6e76b17e52669547bf37a89a995f0319561eabfc218f00ae2daa52144",
+      "bytes": 8340369
+    },
+    {
+      "id": "squad_v2_validation",
+      "url": "https://huggingface.co/datasets/rajpurkar/squad_v2/resolve/3ffb306f725f7d2ce8394bc1873b24868140c412/squad_v2/validation-00000-of-00001.parquet",
+      "revision": "3ffb306f725f7d2ce8394bc1873b24868140c412",
+      "sha256": "0560174ab095c5ac0a8c8dc8da05f1625453c45a77e4ce9cabc6947ddfdd24cb",
+      "bytes": 1350511
+    }
+  ],
+  "prompt_sources": [
+    {
+      "repository": "Giovanna-SH/Value_Reasoning_Reliability",
+      "revision": "0bbf0c5db2b7c8669a8a9d43cfd739a75d17bd84",
+      "file": "src/models/en_originQfile.py",
+      "sha256": "7412a721a86b0133e16b9519a84610fafc38489b26cfa14ead5f7261279f77db"
+    },
+    {
+      "repository": "Giovanna-SH/Value_Reasoning_Reliability",
+      "revision": "0bbf0c5db2b7c8669a8a9d43cfd739a75d17bd84",
+      "file": "src/models/en_defination-putconfident.py",
+      "sha256": "9b07dbb137efb7bc74b9186aec02faf5c67108d6ac0a25b41f6ac57febeb2f06"
+    },
+    {
+      "repository": "facebookresearch/AbstentionBench",
+      "revision": "e29184174c69bc95139b8c33dcca09aacab9442a",
+      "file": "recipe/evaluation_judge_prompts.py",
+      "sha256": "94e751db02712e4abac63336b253fa92bf7cf9b6098a1dab690d655c72c337c9"
+    },
+    {
+      "repository": "facebookresearch/AbstentionBench",
+      "revision": "e29184174c69bc95139b8c33dcca09aacab9442a",
+      "file": "LICENSE",
+      "sha256": "1d8ca66080a2701508a70be4ddad4be28c509bcc3397a682fb8edf767fdd7a00"
+    }
+  ],
+  "description": "Pinned external inputs; fetched locally, not redistributed in this repository."
+}

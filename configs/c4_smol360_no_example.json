@@ -1,0 +1,26 @@
+{
+  "model": {
+    "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+  },
+  "dtype": "float32",
+  "cpu_threads": 1,
+  "max_process_rss_gib": 3.5,
+  "minimum_available_memory_gib": 0.65,
+  "max_context_tokens": 2048,
+  "prompt_rendering": "native_chat",
+  "raw_add_special_tokens": false,
+  "data": "data/cpu_execution_20261023/pvq_no_example.jsonl",
+  "task": "value",
+  "seed": 680,
+  "repetitions": 2,
+  "score_samples": 0,
+  "candidate": {
+    "max_new_tokens": 96,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0
+  },
+  "purpose": "Exploratory post-pilot PVQ prompt control: no_example; first four questions, two draws; not a paper reproduction or confirmatory test"
+}

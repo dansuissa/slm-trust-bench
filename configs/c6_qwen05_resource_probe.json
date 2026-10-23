@@ -1,0 +1,23 @@
+{
+  "model": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "dtype": "float32",
+  "cpu_threads": 1,
+  "max_process_rss_gib": 3.5,
+  "minimum_available_memory_gib": 0.65,
+  "max_context_tokens": 4096,
+  "prompt_rendering": "native_chat",
+  "raw_add_special_tokens": false,
+  "data": "data/cpu_execution_20261023/c6_qwen05_resource_probe.jsonl",
+  "task": "abstention",
+  "seed": 679,
+  "repetitions": 1,
+  "score_samples": 0,
+  "candidate": {
+    "max_new_tokens": 64,
+    "do_sample": false
+  },
+  "purpose": "Eight longest development contexts within each answerability stratum; resource probe only, not representative accuracy evaluation"
+}

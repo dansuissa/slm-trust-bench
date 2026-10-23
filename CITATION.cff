@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the software version and the original papers and datasets used in your experiment."
+title: "Small Language Model Trustworthiness"
+type: software
+version: 0.1.0
+date-released: 2026-10-23
+authors:
+  - family-names: Suissa
+    given-names: Dan
+license: MIT
+repository-code: "https://github.com/dansuissa/slm-trust-bench"
